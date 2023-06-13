@@ -15,7 +15,7 @@ def hod():
             print('Вы ввели неверное число')
             continue
         else:
-            x, y = coordynaty
+            x, y = coordynaty #присвоение координат, можно сменить столбцы на строки
         if not(x.isdigit()) or not (y.isdigit()):
             print('Введите числа!')
             continue
@@ -35,6 +35,8 @@ def hod():
                 print('Поле занято')
         else:
             print('Вы ввели неправильное число')
-
+        if schet == 10:
+            print('Ничья')
+            break
 
 hod()
