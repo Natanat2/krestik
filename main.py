@@ -1,6 +1,4 @@
 pole = [[' '] * 3 for i in range(3)]
-igrok = "X"
-schet = 1
 print('---------------------------\n  Добро пожаловать в игру \n      крестики-нолики\n---------------------------'
       '\nвводите поле в формате x, y\nгде x - строка, y - столбец'
       '\n---------------------------')
@@ -31,8 +29,8 @@ razmetka()
 
 
 def hod():
-    global igrok
-    global schet
+    igrok = "X"
+    schet = 1
     while True:
         coordynaty = input('Выбирите номер строки и столбца в значении от 0-2 через пробел: ').split()
         if len(coordynaty) != 2:
